@@ -52,6 +52,8 @@ namespace Tests
             Assert.That(scores, Is.All.Matches<Score>(score => score.GameRegion == gameRegion));
         }
 
+        
+
         [TestCase(0, ExpectedResult = 0)]
         [TestCase(1, ExpectedResult = 1)]
         [TestCase(10, ExpectedResult = 10)]
@@ -72,4 +74,5 @@ namespace Tests
             return scores.Count();
         }
     }
+    
 }
